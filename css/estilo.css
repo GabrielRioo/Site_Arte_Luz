@@ -9,12 +9,14 @@ header#cabecalho {
     background-color: #cecece;
 }
 
-header#cabecalho ul {
+/* Parte do Menu Principal */
+header#cabecalho ul#Menu {
     margin: auto;
     text-align: center;
 }
 
-header#cabecalho li {
+
+header#cabecalho ul#Menu li {
     list-style: none;
     display: inline-block;
     margin: 0px -3px;
@@ -22,8 +24,17 @@ header#cabecalho li {
     
 }
 
-header#cabecalho li:hover {
+header#cabecalho ul#Menu li:hover {
     background-color: aliceblue;
     cursor: pointer;
+}
+
+/* Parte do Home */
+section {
+    margin-top: -20px;
+    padding: 0;
+    background-color: red;
+    text-align: center;
+    
 }
 
