@@ -30,11 +30,30 @@ header#cabecalho ul#Menu li:hover {
 }
 
 /* Parte do Home */
-section {
+section#home {
     margin-top: -20px;
-    padding: 0;
-    background-color: red;
+    padding-bottom: 300px;
+    background-color: darkgray;
     text-align: center;
-    
 }
 
+section#sobre {
+    margin-top: -20px;
+    padding-bottom: 300px;
+    background-color: #cecece;
+    text-align: center;
+}
+
+section#produtos {
+    margin-top: -20px;
+    padding-bottom: 300px;
+    background-color: darkgray;
+    text-align: center;
+}
+
+section#faleConosco {
+    margin-top: -20px;
+    padding-bottom: 300px;
+    background-color: #cecece;
+    text-align: center;
+}
