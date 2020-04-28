@@ -5,55 +5,74 @@ body {
     margin: auto;
 }
 
-header#cabecalho {
-    background-color: #cecece;
+a {
+    text-decoration: none;
 }
 
+/* header#cabecalho {
+    background-color: #cecece;
+    margin: auto;
+    
+} */
+
 /* Parte do Menu Principal */
+
+
 header#cabecalho ul#Menu {
     margin: auto;
-    text-align: center;
+    float: right;
+    position: relative;
+    top: 20px;
+    right: 30px;
+    
 }
 
 
 header#cabecalho ul#Menu li {
     list-style: none;
     display: inline-block;
+    font-size: 15pt;
     margin: 0px -3px;
     padding: 10px 15px;
-    
+    text-shadow: 1px 1px 1px;
+    transition: 2s;
 }
 
-header#cabecalho ul#Menu li:hover {
-    background-color: aliceblue;
+header#cabecalho ul#Menu a {
+
+    color: #cecece;
+}
+
+
+header#cabecalho ul#Menu a:hover {
+    text-decoration:  underline dashed rgb(179, 0, 164);
+    transition: 1s;
+    cursor: pointer;
+} 
+
+div#logo{
+    margin: 0 auto;
+    padding: 0;
+}
+
+div#logo img#logo-imagem {
+    width: 200px;
+    height: 150px;
+}
+
+div#logo img#logo-imagem:hover {
     cursor: pointer;
 }
-
-/* Parte do Home */
-section#home {
-    margin-top: -20px;
-    padding-bottom: 300px;
-    background-color: darkgray;
+/* Parte do Footer */
+footer#rodape p {
     text-align: center;
+    position: fixed;
+    bottom:0;
+    left: 40%;
 }
 
-section#sobre {
-    margin-top: -20px;
-    padding-bottom: 300px;
-    background-color: #cecece;
-    text-align: center;
-}
-
-section#produtos {
-    margin-top: -20px;
-    padding-bottom: 300px;
-    background-color: darkgray;
-    text-align: center;
-}
-
-section#faleConosco {
-    margin-top: -20px;
-    padding-bottom: 300px;
-    background-color: #cecece;
-    text-align: center;
+footer#rodape p#texto-rodape, a#github {
+    color: #bebebe;
+    font-size: 11pt;
+    text-shadow: 1px 1px 1px;
 }
