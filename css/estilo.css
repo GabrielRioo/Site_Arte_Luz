@@ -178,6 +178,11 @@ ul#album-fotos li#foto01:hover {
     background-position: 0px 0px;
     background-size: 200px 200px;
 }
+
+section#contato {
+    background-color: #fff0f5;
+}
+
 /* Parte do Footer */
 footer#rodape {
     padding-bottom: 10px;
