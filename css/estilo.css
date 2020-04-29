@@ -3,6 +3,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: auto;
+    background-color: #fff0f5;
 }
 
 a {
@@ -16,15 +17,32 @@ a {
 } */
 
 /* Parte do Menu Principal */
-
+section#corpo{
+    display: block;
+    float: left;
+    width: 50%;
+}
+aside#lateral {
+    width: 50%;
+    display: block;
+    float: right;
+}
 
 header#cabecalho ul#Menu {
     margin: auto;
     float: right;
     position: relative;
-    top: 20px;
-    right: 30px;
-    
+    text-align: right;
+    padding: 20px;
+    background-color: #f8e1f4;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+}
+
+header#cabecalho {
+    background-color: #f8e1f4;
+    width: 100%;
 }
 
 
@@ -34,18 +52,18 @@ header#cabecalho ul#Menu li {
     font-size: 15pt;
     margin: 0px -3px;
     padding: 10px 15px;
-    text-shadow: 1px 1px 1px;
+    text-shadow: 1px 1px 1px rgb(167, 167, 167);
     transition: 2s;
 }
 
 header#cabecalho ul#Menu a {
 
-    color: #cecece;
+    color: #efa8e4;
 }
 
 
 header#cabecalho ul#Menu a:hover {
-    text-decoration:  underline dashed rgb(179, 0, 164);
+    text-decoration:  underline dashed #97e5ef;
     transition: 1s;
     cursor: pointer;
 } 
@@ -56,8 +74,11 @@ div#logo{
 }
 
 div#logo img#logo-imagem {
-    width: 200px;
-    height: 150px;
+    width: 350px;
+    height: 250px;
+    margin: auto;
+    display: block;
+    opacity: 0;
 }
 
 div#logo img#logo-imagem:hover {
@@ -71,27 +92,31 @@ div#centro {
     top: 50px;
     margin: auto;
     clear: both;
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     border: 1px solid black;
-    border-radius: 400px;
+    border-radius: 300px;
 
 }
 /* Parte do Footer */
-footer#rodape p {
+footer#rodape {
+    padding-top: 1px;
+    padding-bottom: 20px;
+    margin-top: 100%;
     text-align: center;
-    position: fixed;
-    bottom:0;
-    left: 45%;
+    background-color: #efa8e4;
+    bottom: 0;
+    
+    
 }
 
 footer#rodape p#texto-rodape, a#github {
-    color: #bebebe;
+    color: #fff0f5;
     font-size: 11pt;
     text-shadow: 0.5px 0.5px 0.5px;
     transition: 0.5s;
 }
 
 footer#rodape  a#github:hover {
-    color: #a5a4a4;
+    color: #f8e1f4;
 }
