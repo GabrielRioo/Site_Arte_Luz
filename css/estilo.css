@@ -1,243 +1,62 @@
 @charset "UTF-8";
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: auto;
-    background-color: #fff0f5;
-}
+/* #fff0f5;
+#fff0f5;
+#f8e1f4;
+#efa8e4;
+#97e5ef; */
 
-a {
-    text-decoration: none;
-}
-
-/* header#cabecalho {
-    background-color: #cecece;
-    margin: auto;
-    
-} */
-
-/* Parte do Menu Principal */
-section#sobre{
-    display: block;
-    float: left;
-    width: 50%;
-    padding-bottom: 300px;
-    background-color: #fff0f5;
-}
-aside#sobre-lateral {
-    width: 50%;
-    padding-bottom: 300px;
-    display: block;
-    float: right;
-    background-color: #fff0f5;
-}
-
-header#cabecalho ul#Menu {
-    margin: auto;
-    float: right;
-    position: relative;
-    text-align: right;
-    padding: 20px;
-    background-color: #f8e1f4;
-    top: 0px;
-    right: 0px;
-    width: 100%;
-}
-
-header#cabecalho {
-    background-color: #f8e1f4;
-    width: 100%;
-}
-
-
-header#cabecalho ul#Menu li {
-    list-style: none;
-    display: inline-block;
-    font-size: 15pt;
-    margin: 0px -3px;
-    padding: 10px 15px;
-    text-shadow: 1px 1px 1px rgb(167, 167, 167);
-    transition: 2s;
-}
-
-header#cabecalho ul#Menu a {
-
-    color: #efa8e4;
-}
-
-
-header#cabecalho ul#Menu a:hover {
-    text-decoration:  underline dashed #97e5ef;
-    transition: 1s;
-    cursor: pointer;
-} 
-
-div#logo{
-    margin: 0 auto;
-    padding: 0;
-}
-
-div#logo img#logo-imagem {
-    width: 350px;
-    height: 250px;
-    margin: auto;
-    display: block;
-    opacity: 0;
-}
-
-div#logo img#logo-imagem:hover {
-    cursor: pointer;
-}
-
-p#text-contato {
-    color: #efa8e4;
-    text-shadow: 1px 1px 1px #f089e0;
-    display: block;
-    text-align: center;
-    margin: 25px auto;
-    font-size: 15pt;
-}
-
-button#contato {
-    display: block;
-    margin: 0 auto 30px auto; 
-    text-align: center;
-    background-color: #f089e0;
-    border: none;
-    color: white;
-    padding: 16px 42px;
-    text-decoration: none;
-    font-size: 15pt;
-    transition-duration: 0.4s;
-    cursor: pointer;
-}
-
-button#contato:hover {
-    background-color: #ffe8f0;
-    color: #f089e0;
-    border: 2px solid #f089e0
-}
-
-/* ==============*/
-div#centro-1 {
-    display: block;
-    margin: 25px auto;
-    clear: both;
-    width: 250px;
-    height: 250px;
-    border: 1px solid black;
-    border-radius: 300px;
-
-}
-
-div#centro-2 {
-    display: block;
-    margin: 25px auto;
-    clear: both;
-    width: 250px;
-    height: 250px;
-    border: 1px solid black;
-    border-radius: 300px;
-
-}
-section#produto {
-    background-color: #ffe8f0;
-    padding: 50px 0 50px 0;
-}
-
-ul#album-fotos {
-    width: 800px;
-    margin: 0 auto;
-    padding: 50px;
-    overflow: hidden;
-    list-style: none;
-}
-
-ul#album-fotos li {
-    float: left;
-    width: 200px;
-    height: 200px;
-    margin: 28px;
-    border: 5px solid #ffffff;
-    background-color: #ffffff;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
-    -webkit-transition: all 0.4s ease-in;
-}
-
-ul#album-fotos li#foto01 {
-    /* background: url('../imagens/logo_old.png') no-repeat; */
-    background-position:50% 50% ;
-    background-size: 400px 400px;
-    background-color: #ffffff;
-}
-ul#album-fotos li:hover {
-    -webkit-transform: scale(1.5);
-    
-}
-
-ul#album-fotos li button {
-    opacity: 0;
-    color: #f8e1f4;
-    background-color: #efa8e4;
-    padding: 5px;
-    display: block;
-    position: relative;
-    top: 175px;
-    left: 45px;
-    border: none;
-    border-radius: 5px;
-}   
-
-ul#album-fotos li:hover button.botao-foto {
-    opacity: 1;
-    cursor: pointer;
-}
-
-li button.botao-foto:hover{
-    background-color: #f089e0;
-}
-
-ul#album-fotos li#foto01:hover {
-    background-position: 0px 0px;
-    background-size: 200px 200px;
-}
-
-section#contato {
-    background-color: #fff0f5;
-}
-
-/* Parte do Footer */
-footer#rodape {
-    padding-bottom: 10px;
-    margin-top: 0;
-    text-align: center;
-    background-color: #efa8e4;
-    bottom: 0;
-    
-    
-}
-
-footer#rodape p#texto-rodape, a#github {
-    color: #fff0f5;
-    padding-top: 5px;
+* {
     margin: 0;
-    font-size: 11pt;
-    text-shadow: 0.5px 0.5px 0.5px;
-    transition: 0.5s;
-}
-
-footer#rodape  a#github:hover {
-    color: #f8e1f4;
-}
-
-i.fa {
     padding: 0;
-    font-size: 20px;
-    padding: 2px;
-    color: #f8e1f4;
-    transition: 0.5s;
+    box-sizing: border-box;
 }
 
-i.fa:hover{
-    color: #ffffff;
+body {
+    background-size: auto 100vh;
+    background-color: #f8e1f4;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    font-size: 12pt;
 }
+
+header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    background-color: #fff0f5;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+}
+
+.menu a {
+    display: block;
+    padding: 20px 35px;
+    text-decoration: none;
+    color: black;
+}
+
+.menu a:hover {
+    background-color: #f8e1f4;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu li {
+    list-style: none;
+}
+
+img.logo-imagem {
+    text-align: center;
+    width: 100vw;
+}
+
+
